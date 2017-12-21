@@ -1,0 +1,56 @@
+/* CSS style sheet for DesiretoLearn Lab pages
+   Designed by C. Mark Yendt in January 2009    */
+
+body {font-family:Verdana, Helvetica, sans-serif;
+      font-size:11pt;
+      margin-left: .5in;
+	    margin-top: .5in;
+	    margin-right: .5in;
+	    margin-bottom: .5in;
+}
+
+pre {background-color:#CCCCCC;
+ 	   border:1px solid black;
+     font-size:14px;
+	   font-weight:bold;
+	  }
+
+h1,h2,h3,h4,h5,h6 {
+	color: #FFFFFF;
+	font-family:Century Gothic, Verdana, Arial, Helvetica, sans-serif ;
+	padding-left:10px;
+	background-color:#000000;
+	border-bottom:2px solid darkgray;
+	border-top:1px solid darkgray;
+	}
+
+table { width:100%;
+      	border:3px double black;
+		margin: 0px 0px 0px 0px;
+		border-collapse:collapse;
+}
+
+table td, table th {border:1px solid black;
+          	        margin: 0px 0px 0px 0px;
+		            padding: 2px 2px 2px 2px;
+	                font-size:11pt;
+					text-align:left;
+}
+
+table th {color: #000000;
+          background-color:#FFFFFF;
+    		  font-size:12pt;
+		     }
+
+a,a:visited,a:active {
+    font-weight:bold;
+    text-decoration:none;
+}
+
+a:hover {text-decoration:underline;}
+
+.important {color:#FF0000;
+            font:Arial, Helvetica, sans-serif;
+      			font-size:14px;
+			      font-weight:bold;
+           }

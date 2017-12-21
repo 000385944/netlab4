@@ -1,0 +1,259 @@
+<html>
+<head>
+	<title>COMP-10066 Lab # 4</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="styles.css" mce_href="styles.css" rel="stylesheet" type="text/css"/>
+	<style>
+	li {padding-bottom:5px;}
+	</style>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#0000ff" 
+vlink="#0000ff" alink="#0000ee" 
+class="Normal">
+<h1>COMP-10066 Lab # 4</h1>
+<p><b>Complete the following exercise and submit electronically using the eLearn dropbox. See eLearn for the exact date and time of the submission. </b><b>This lab must be done individually. &nbsp;&nbsp;</b></p>
+<h2>Background</h2>
+<p>You are working for a company (<strong>jBlink Software inc</strong>.) that recently had one of the programmers leave. The programmer was working on a library of methods in Java to support Statistical claculations.&nbsp; The library was designed using generics and it is expecte to work with the Integer, Double and Long data types.&nbsp;</p>
+<p>The code appears complete and includes a main method that executes each of the public methods in the class with a using different supported data types. Since these are general purpose methods each has been declared static (all information required to accomplish the intended functionality is passed as method parameters). Your boss has asked you to do all of the following:</p>
+<ul>
+<li>Set up a project using NetBeans and confirm operation of the program.</li>
+<li>Place the code into a source control system. Specifically, you have been asked to use Git for this project. Git is included within Netbeans. A tutorial on how to use the features of Git required for this lab is available at <a href="Git_Tutorial.html">Git NetBeans Tutorial</a></li>
+<li>Document the all of the methods according to the accepted java standards as published at <a href="http://geosoft.no/development/javastyle.html">http://geosoft.no/development/javastyle.html</a>.</li>
+<li>Produce a set of unit tests that confirms that all of the public methods operate as expected.&nbsp; The unit tests must attempt to use different data sets to ensure 100% code coverage and significant data coverage.&nbsp;</li>
+<li>Write-up a report summarizing your findings and include suggestions on improving the <strong>software development process</strong> at jBlink.</li>
+</ul>
+<h2>Tasks</h2>
+<p>You have been left with only the java source code for the project&nbsp;<a href="jblink_stats.java" target="_self">here</a></p>
+<p>For this project follow the steps below:</p>
+<ol>
+<li>Create a new NetBeans project and add the source file to the project.</li>
+<li>Execute the project and ensure you see the results in the output window</li>
+<li>Initiate a GIT repository for the project, and make an initial commit - "COMMIT # 1 - Initial Commit". This initial commit should occur once you have a successful running program, but before you make any source code changes.&nbsp; Esnure that you set your name as the contributor to the project.&nbsp; You must use your Mohawk College email address within the submission.</li>
+<li>Document and improve the source code using the rules as provided in the Java Style Guideline. In order to understand the methods it is suggested that you modify the main method and attempt to pass different parameters to the methods. Specifically:
+<ul>
+<li>Improve the method names to reflect the purpose as you have determined.</li>
+<li>Improve the method parameters to reflect the actual data requirements of the method.</li>
+<li>Improve the variable names to reflect more accurately the role of the variables within each method.</li>
+<li>Add comments to the code within the methods to describe the method functionality. It is important at this stage to document the inner working of the methods using standard comments. Use<strong> //</strong> comments for this step</li>
+<li>Add documentation to each of the methods by adding<strong> full Javadoc comments</strong> to describe each of the methods and the purpose of the method. The javadoc must include <strong>@param, </strong><strong>@return and @throws</strong> where applicable.</li>
+<li>Once this is completed, commit these changes to the repository - "COMMIT#2 - Source Code Improvements".</li>
+</ul>
+</li>
+<li>You must create unit tests as demonstrated in lecture and lab for each of the public methods provided. Ensure that your tests verify<strong> all</strong> of the intended functionality of the methods. You need to create tests that confirm normal operation (test to pass) and confirm any exceptions(test to fail) that are explicitly thrown in the class.&nbsp; You do not need to test for NullPointerExceptions. Netbeans includes Version 4.x of jUnit which must be used for the tests. See the following tutorial for guidance on creating your tests <a href="http://netbeans.org/kb/docs/java/junit-intro.html#Exercise_42">http://netbeans.org/kb/docs/java/junit-intro.html#Exercise_42</a>. For each method ensure the following:
+<ul>
+<li>Your tests provide 100% code coverage</li>
+<li>Your confirm a variety of return values</li>
+<li>Each unit test should use different input data that does not duplicate a previous unit test. Tests that do not provide additional value (prove something new) are considered duplicates.</li>
+<li>Test boundary conditions where possible</li>
+<li>Any method that returns a value that does not match the expected result, must fail. These failed cases will be the BUGS in the source code</li>
+</ul>
+</li>
+<li>Commit these changes to the repository - "COMMIT#3 - Unit Tests added".</li>
+</ol>
+<h3>Report</h3>
+<p>You are to write a word document to summarize your findings and submit this along with the full NetBeans project source code that was constructed for the lab.</p>
+<ul>
+<li>A title page including your name / student number and course name.</li>
+<li>Include a statement of authorship at the bottom of the page (only include this on the title page).&nbsp;</li>
+<li>An introduction that explains the purpose of the report.</li>
+<li>A summary of the development environment including hardware and software used.</li>
+<ul>
+<li>Include the time required for you to understand the functionality of each of the methods.</li>
+</ul>
+<li>A table that describes each of the methods in the class.</li>
+<li>A list of the rules that you applied from the java style guideline to the code. You should list only the rules you actually applied to the code.&nbsp; List the rules by section and number with a brief description of what the rule covers.</li>
+<li>The list of Unit tests with a description of the test, why it is included, whether it passed of failed.</li>
+<li>A summary of the bugs you found and a cross reference to the failed test(s) that proves the bug.</li>
+<li>A list of what you feel are the most important improvements that you could make to the current development process. List up to three items in order of importance.</li>
+</ul>
+<p>The report should not contain spelling or grammar errors, so feel free to make use of the Communications Center's proofreading service.</p>
+<h3>Submission</h3>
+<p>Follow the <strong>hand-in guidelines</strong> as stated below :</p>
+<ol>
+<li>Include a <strong>Statement of Authorship</strong> within each source file indicating the changes you made to the file. If the file was provided and you have made no changes, then leave the original authorship/copyright.</li>
+<li>Create a NetBeans project that will include the source file and the unit tests as required.</li>
+<li>Zip up the project directory and called in<strong> Lab4.zip</strong></li>
+<li>Create a Word (.docx file) that contains your report and call it <strong>Lab4Report.docx</strong> (do not zip)</li>
+<li>Upload <strong>both files separately</strong> to the dropbox in eLearn for Lab#4.</li>
+</ol>
+<p><strong>NO LATE LABS ACCEPTED</strong></p>
+<h2>Marking Scheme</h2>
+<table style="width: 100%;" class="main" cellspacing="0" cellpadding="0" border="1">
+<tbody>
+<tr style="height: 17px;" class="THead">
+<th style="height: 17px;" width="80%">Section</th>
+<th style="height: 17px;">Marks</th>
+<th style="height: 17px;">Marks Available</th>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;" colspan="3">
+<p><strong>Part 1 - Document and Improve Source code Quality(13 marks)</strong></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Package and import guidelines</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">1</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Method naming guidelines</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">2</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Spacing guidelines</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">2</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Variable naming guidelines</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">2</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Javadoc guidelines</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">2</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>GIT Used with 3 commits as listed above - with comments as required and author - use Mohawk email</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">4</td>
+</tr>
+<tr style="height: 17px;">
+<td style="height: 17px;" colspan="3"><strong>Part 2 - Unit Tests (16 marks)</strong></td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Unit tests for avg method</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">4</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Unit tests for sum method</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">4</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Unit tests for med method</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">4</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Unit tests for sd method</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">4</td>
+</tr>
+<tr style="height: 17px;">
+<td style="height: 17px;" colspan="3"><strong>Part 3 - Report (13 marks)</strong></td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Title Page / Introduction / Report Quality and Professionalism</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">1</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Method Summaries</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">2</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>List of Rules implemented from the guideline</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">2</td>
+</tr>
+<tr style="height: 43.2px;">
+<td style="height: 43.2px;">
+<blockquote>
+<p>Units test list with importance and fail/pass status</p>
+</blockquote>
+</td>
+<td style="height: 43.2px;">&nbsp;</td>
+<td style="height: 43.2px;">2</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Bug Summary</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">2</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<blockquote>
+<p>Recommendations to Boss about how code could be improved.</p>
+</blockquote>
+</td>
+<td style="height: 43px;">&nbsp;</td>
+<td style="height: 43px;">2</td>
+</tr>
+<tr style="height: 43px;">
+<td style="height: 43px;">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Professionalism - Spelling / Grammar</p>
+</td>
+<td style="height: 43px;"></td>
+<td style="height: 43px;">2</td>
+</tr>
+<tr style="height: 17px;">
+<td style="height: 17px;"><b>TOTAL</b></td>
+<td style="height: 17px;">&nbsp;</td>
+<td style="height: 17px;"><strong>42</strong></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+</body>
+</html>

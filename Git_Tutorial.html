@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<h1>Using Git with NetBeans</h1>
+<ol>
+<li>Start NetBeans</li>
+<li>Create a new Project (called GitTest)</li>
+<li>The main method will simply be a Hello World program. Add a statement to output <b>Hello World of Testing </b>to the console.</li>
+<li>Run the program and confirm the output to the screen as shown below:</li>
+</ol>
+<p><img id="Picture 1" src="image001.jpg" height="497" border="0" width="624" /></p>
+<ul>
+<li>Now we are going to create a repository to track Changes to the project. To do this we must first set-up a Git repository. NetBeans includes Git so it does not need to be installed on the local machine. You may want to download Git to use for other places where you need source code control. To initialize the Git repository(repo) <b>right click on the project in the Project Pane and select the Versioning menu item and then Initialize Git repository</b>. Once selected you should see a folder selection Dialog as shown below:<br /> <img id="Picture 2" src="image002.png" height="201" border="0" width="415" /> By default this will have the Root path set the project folder location. This default should be used where possible as it will then allow changes to be tracked when the project is moved from machine to machine (as long as Git in installed). Git also supports remote repositories which is very useful creating a project in a single location and then connecting to it from multiple locations. See GitHub.</li>
+</ul>
+<p><img id="Picture 4" src="image005.png" style="float: left;" height="214" border="0" width="202" /></p>
+<p style="float: left; margin-left: 50px; width: 300px; border: 1px solid black; padding: 10px;">The project window will now appear a little different. The source file will be in Green and a small blue icon will appear beside each item. This indicates that all the components are part of the Git repository and none of the items have been Committed."&gt;</p>
+<p style="clear: both;"></p>
+<p></p>
+<ul>
+<li>After initialization we will <b>Commit</b> the changes to the repository. To do this <b>right click on project and use the Git menu option and select Commit</b>. Set the Commit Message to the text below and ensure that the Author data is correct. Modify it to be your name at this point. Click the <b>Commit</b> button to place the code into the Repo.</li>
+</ul>
+<p></p>
+<p><img id="Picture 6" src="image006.png" height="566" border="0" width="624" /></p>
+<p></p>
+<ul>
+<li>Your project is now in the repo and now you can use this to track project changes over time. To do this let's add a method to the main program. See the screen below for the modified program. Modify your code and obtain the output below:</li>
+</ul>
+<p></p>
+<p class="MsoNormal"><img id="Picture 8" src="image007.jpg" height="483" border="0" width="625" /></p>
+<p></p>
+<ul>
+<li>You will notice that within the NetBeans environment lines are marked with blocks of green (new text that has not been committed) and blue blocks (modified and not committed) text. This allows to see changes before you commit. All changes will be saved in your local files but the changes will not be persisted in the repository until you commit the changes. Now commit the change and name it "Falling Ball Added Version 2.0".</li>
+</ul>
+<p></p>
+<p>You should see both commits. To see the changes between the current version select the History tab of the source code and select the initial commit, you will see the changes between the two versions highlighted as shown below:</p>
+<p><img id="Picture 7" src="image008.jpg" height="335" border="0" width="623" /></p>
+<p>Git and source code control in general provides a powerful way to review changes and also log the history of changes to the source code. Git has many other features as well for creating branches and merging branches back in to the project. You may want to get a further overview of Git from <a href="https://git-scm.com/book/en/v2/Getting-Started-Git-Basics">https://git-scm.com/book/en/v2/Getting-Started-Git-Basics</a>.</p>
+</body>
+</html>

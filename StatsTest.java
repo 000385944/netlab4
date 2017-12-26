@@ -13,6 +13,7 @@ public class StatsTest {
 	private static final ArrayList<Integer> numIntList = new ArrayList<>(Arrays.asList(9,2,7,4,5,6,3,8,1,10));
 	private static final ArrayList<Integer> numNegIntList = new ArrayList<>(Arrays.asList(-9,-2,-7));
 	private static final ArrayList<Double> numDoubleList = new ArrayList<>(Arrays.asList(2.2, 100.0, 17.5, 30.2, 31.1));
+	private static final ArrayList<Double> numDoubleNegList = new ArrayList<>(Arrays.asList(2.2, 50.0, 17.6, 30.2, 30.1));
 
 	@Test
 	public void testClassInitialiser() {
@@ -73,6 +74,11 @@ public class StatsTest {
 	@Test
 	public void testMedUsingDoubleList() {
 		assertEquals(30.2, jblink_stats.med(numDoubleList), 0.0);
+	}
+
+	@Test
+	public void testMedUsingNegIncDoubleList() {
+		assertEquals(30.1, jblink_stats.med(numDoubleNegList), 0.0);
 	}
 	
 	@Test
